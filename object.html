@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label> username:</label> <input type ="text" name="username" id="username"></input> <br>
+        <label> password:</label> <input type ="text" name="password" id="password"></input> <br>
+        <button onclick="user()">login</button>
+        <script>
+            function user(){
+                var username=document.getElementById("username").value;
+                var password=document.getElementById("password").value;
+                var obj1={
+                    username: username,
+                    password: password
+                }
+                alert(obj1.username)
+                alert(obj1.password)
+            }
+            
+            
+        </script>
+
+        
+
+    </body>

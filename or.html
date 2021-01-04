@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+        <label> username:</label> <input type ="text" name="username" id="username"></input> <br>
+        <label> password:</label> <input type ="text" name="password" id="password"></input> <br>
+        <button onclick="details()">login</button>
+        </form>
+        <script>
+           function details() {
+               event.preventDefault();
+               var username=document.getElementById("username").value;
+               var password=document.getElementById("password").value;
+
+               (username== "sai" || username=="8328630841") && password=="sai"?alert("login success") : alert("login failure");        
+   
+}
+            </script>
+            </body>
+            </html

@@ -1,0 +1,54 @@
+
+
+ 
+<!DOCTYPE HTML>
+<html>
+  <head> <tittle> HI GANESH </tittle>
+ </head>
+   <body>
+<select name="menu">
+      <option name="branch"/>branch <br /> <br />
+      <option name="EEE"/>EEE <br /> <br />
+      <option name="ECE"/>ECE <br /> <br />
+      <option name="CSE"/>CSE <br /> <br />
+    </select>
+    <select name="menu">
+      <option name="college"/>college <br /> <br />
+      <option name="JNTUK"/>JNTUK <br /> <br />
+      <option name="JNTUH"/>JNTUH <br /> <br />
+      <option name="JNTUA"/>JNTUA <br /> <br />
+    </select> <br /> <br />
+     <form action="successfully submitted your response" method="post" target="_self"/>
+     <input type="text" size="30" name="user name" id="username" autofocus placeholder="enter your name"/> <br /> <br />
+     <input type="password" size="30" name="password" id="password" placeholder="enter your password"/> <br /> <br />
+     <input type="email" size="30" name="email" id="email" placeholder="enter your email"/> <br /> <br />
+     <input type="number" name="number" placeholder="enter your phn number"/> <br /> <br />
+     <input type="date"  name="dob"/> <br /> <br />
+     <input type="radio" name="gender"/>male 
+     <input type="radio" name="gender"/>Female <br /> <br />
+     <input type="checkbox" name="hobbies" cheaked/>chatting
+     <input type="checkbox" name="hobbies" cheaked/> gaming 
+     <input type="checkbox" name="hobbies" cheaked/> reading
+     <input type="checkbox" name="hobbies" cheaked/> filrting <br /> <br />
+     <input type="file"/> <br /> <br />
+     <textarea rows="5" cols="50"> </textarea> <br /> <br />
+  <input type="submit" value="register"/>
+  <input type="reset" value="clear"/> br /> <br />
+   <input type="search"/> <br /> <br /> 
+  <input onclick="gilll()" type="button" value="OK"/>
+  <p id="getdetails"> hi </p>
+  </form>
+  <script>
+    function gilll(){
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        var email=document.getElementById("email").value;
+        document.getElementById("getdetails").innerHTML= username+"<br> "+password+"<br> "+email;
+    }
+    
+</script>
+
+</body>
+</html>
+
+ 
