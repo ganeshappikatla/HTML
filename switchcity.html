@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select id="nature" onchange="places()">
+            <option value="hyd"> hyd</option>
+            <option value="Tn"> tamil</option>
+            <option value="c"> chennai</option>
+            <option value="M"> MUMBAI</option>
+            <option value="KA"> KARNATAKA</option>
+            
+        </select>
+
+        <h1 id="cityinfo" ></h1>
+
+        <script>
+            function places(){
+                var nature=document.getElementById("nature").value;
+                switch (nature){
+                    case "hyd":document.getElementById("cityinfo").innerHTML="charminar,hitechcity,dhanraj";
+                    break;
+                    case "Tn":document.getElementById("cityinfo").innerHTML="beach,station,dhanraj";break;
+                    case "c":document.getElementById("cityinfo").innerHTML="pilla,arundhati,dhanraj";break;
+                    case "M":document.getElementById("cityinfo").innerHTML="milky,beauty,dhanraj";break;
+                    case "KA":document.getElementById("cityinfo").innerHTML="keka,tcs,goldenretriver";break;
+                }
+            }
+        </script>
+    </body>
+</html>
