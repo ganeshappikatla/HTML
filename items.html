@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select id="item" onchange="getitems()">
+            <option value="item1"> MOBILE</option>
+            <option value="item2"> LAPTOP</option>
+            <option value="item3"> PENCIL</option>
+            <option value="item4"> CHARGER</option>
+            <option value="item5"> WATCH</option>
+            
+        </select>
+
+        <h1 id="itemco"> </h1>
+
+        <script>
+            function getitems(){
+                var item=document.getElementById("item").value;
+                switch (item){
+                    case "item1":document.getElementById("itemco").innerHTML=" <img src='sample.jpg' width='150px' height='150px'/><h4> price:54rs</h4><h5> brand:motorola</h5>"; break;
+                    case "item2":document.getElementById("itemco").innerHTML="<img src='sample2.jpg' width='150px' height='150px'/><h4>price:54000rs</h4><h5> brand:HP</h5>";break;
+                    case "item3":document.getElementById("itemco").innerHTML="<img src='sample3.jpg' width='150px' height='150px'/><h4>price:5rs</h4><h5> brand:NATARAJ</h5>";break;
+                    case "item4":document.getElementById("itemco").innerHTML="<img src='sample4.jpg' width='150px' height='150px'/><h4>price:500rs</h4><h5> brand:REDMI</h5>";break;
+                    case "item5":document.getElementById("itemco").innerHTML="<img src='sampl5.jpg' width='150px' height='150px'/><h4>price:5000rs</h4><h5> brand:QATAR</h5>";break;
+                }
+            }
+        </script>
+    </body>
+</html>
