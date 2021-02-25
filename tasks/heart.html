@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+          <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+    <body>
+        <i class='far fa-heart' onclick="heart()" style='font-size:48px;color: red'></i> <span id="heart_id">0</span>
+    </body>
+    <script>
+        var hearty=0;
+        
+        function heart(){
+            
+            if(document.getElementById("heart_id").innerHTML==0){
+                hearty=1;
+                document.getElementById("heart_id").innerHTML=hearty;
+            }
+            else{
+                hearty=0;
+                document.getElementById("heart_id").innerHTML=hearty;
+            }
+        }
+
+    </script>
+</html>

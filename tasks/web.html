@@ -1,0 +1,97 @@
+<html>
+    <head>
+<style>
+    .theader{
+        height: 100px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.938);
+        text-align: center;
+        padding-top: 7px;
+        font-family:cursive;
+        padding-bottom: 10px;
+        font-size: 20px;   
+         }
+body{
+    background-color: rgb(202, 255, 255);
+}
+         .sign_box{
+    border:2px solid gray;
+    height: 230px;
+    width: 300px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:100px;
+    padding:20px;  
+    background-color: cadetblue;
+  }
+ 
+          #uname,#pass{
+             background-color: transparent;
+              border: none;
+              border-bottom: 2px solid rgb(253, 128, 26);
+          }
+          td{
+              padding-top:20px ;
+          }
+          .avatar{
+              text-align: center;
+              margin-top: -70px;
+              
+          }
+          .footer{
+              text-align:center;
+              background-color:rgba(76, 11, 255, 0.781);
+              margin-top:76px;
+              height: 50px;
+              padding-top:8px;
+
+          }
+          
+</style>
+    </head>
+    <body>
+        <div class="theader">
+            <img id="logo" src="avatar.png" height="70" style="float:left; padding-left: 20px;padding-top:20px;" width="70">
+            <h1 style="color:rgb(255, 238, 0)"><b>AVAHI</b></h1></div>
+        <div class="body">
+            <div class="sign_box">
+                <div class="avatar">
+                    <img src="avatar.png" height="100" width="100" alt="avatar image">
+                </div>
+              <form>
+                  <table>
+                      <tr>
+                          <td>
+                              <label for="name">User Name</label> 
+                          </td>
+                          <td>
+                              :
+                          </td>
+                          <td>
+                              <input type="text" placeholder="Enter User Name" value="" id="uname" name="uname" required>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input type="password" placeholder="Enter Password" value="" id="pass" name="pass" required>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td colspan="3" align="center"><input type="submit" value="Login"> <input type="reset" value="Cancel"></td>
+                      </tr>
+                  </table>
+              </form>
+              <p>I don't have an account?<a href="#">Sign-Up.</a></p>
+            </div>
+        </div>
+         <div class="footer">
+             <p>© 2021, AVAHI. All rights reserved. </p>
+         </div>       
+    </body>
+</html>

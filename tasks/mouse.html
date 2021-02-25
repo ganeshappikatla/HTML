@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+          <img id="image" onmouseout="unzoom()" onmouseover="zoom()" width="400px" height="200px" src="re.jpeg">
+
+           
+          <script> 
+
+                    var image=document.getElementById("image").style;
+          
+              function zoom(){
+
+                          image.width="430";
+                          image.height="210"
+
+              }
+
+              function unzoom(){
+
+                        image.width="400";
+                        image.height="200"
+
+             }
+               
+          </script>
+
+     </body>
+</html>

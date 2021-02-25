@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" id="mobile_number" placeholder="enter mobilenumber" size="20"> <br> <button onclick="creOTP()"> getOTP</button>
+            <input type="password" id="password" placeholder="enter password" size="20"> <br> 
+            <input type="text" id="otp" placeholder="enter otp" size="20"> <br>
+            <button onclick="validate()" >submit</button>
+            
+        </form>
+        <script>
+
+            function creOTP(){
+            event.preventDefault();
+            var mobile_number=document.getElementById("mobile_number").value;
+            if(mobile_number == "7780573994"){
+                alert(" your otp is 0909");
+            }
+            else{
+                alert("incorrect mobile number");
+            }
+        } 
+        function  validate(){
+            var password=document.getElementById("password").value;
+            var otp=document.getElementById("otp").value;
+
+            if(password == "abc" && otp =="0909"){
+                redirect(true);
+            }
+                else{
+                    redirect(false);
+                }
+            }
+            var redirect=function(result){
+                event.preventDefault();
+                alert("on the man go on");
+                if(result == true){
+                    window.location.href="homy.html";
+                    redirect=null;  
+                }
+                else{
+                    alert("wrong details!")
+                    redirect=null;
+                }
+            }   
+        </script>
+    </body>
+</html>

@@ -4,7 +4,7 @@
     </head>
     <body>
         <i class="fa fa-thumbs-up" onclick="thumbsup()" style="font-size: 100px; color:green"></i><span id="like_id">0</span> &nbsp;&nbsp;&nbsp;
-        <i class="fa fa-thumbs-down" onclick="thumbsdown()" style="font-size: 100px; color:green"></i><span id="dislike_id">0</span> &nbsp;&nbsp;&nbsp;
+        <!--<i class="fa fa-thumbs-down" onclick="thumbsdown()" style="font-size: 100px; color:green"></i><span id="dislike_id">0</span> &nbsp;&nbsp;&nbsp;-->
     <script>
         var like=0;
         var dislike=0;
@@ -12,7 +12,7 @@
             if( document.getElementById("like_id").innerHTML == 0){
                like=1
                dislike=0
-               document.getElementById("dislike_id").innerHTML=dislike;
+              document.getElementById("dislike_id").innerHTML=dislike;
                document.getElementById("like_id").innerHTML=like;
             }
            else{
@@ -20,7 +20,7 @@
                document.getElementById("like_id").innerHTML=like;
            }
         }
-        function thumbsdown(){
+       > function thumbsdown(){
             if(document.getElementById("dislike_id").innerHTML ==0){
                 dislike=1
                 like=0
@@ -31,7 +31,7 @@
                dislike=0
                document.getElementById("dislike_id").innerHTML=dislike;
            }   
-        }
+       }
     </script>
     </body>
 </html>

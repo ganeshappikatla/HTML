@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <select id="city" onchange="places()"> 
+            <option value="hyd"> hyderbad</option>
+            <option value="tn"> chennai</option>
+            <option value="ka"> bangalore</option>
+            <option value="mr"> mumbai</option>
+        </select>
+        <h3 id="cityinfo"></h3>
+        <script>
+            function places(){
+                var city =document.getElementById("city").value;
+                switch (city){
+                    case "hyd":document.getElementById("cityinfo").innerHTML="charminar,mahesh"; break;
+                    case "tn":document.getElementById("cityinfo").innerHTML="beavh,ganesh"; break;
+                    case "ka":document.getElementById("cityinfo").innerHTML="googler,souuaa"; break;
+                    case "mr":document.getElementById("cityinfo").innerHTML="okoko,ufffuuuuuu"; break;
+                }
+
+            }
+        </script>
+    </body>
+
+</html>

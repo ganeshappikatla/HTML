@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head> <tittle> HI GANESH appikatla</tittle>
+ </head>
+   <body>
+
+    </select>
+     <form >
+     <input type="text"  name="user name" id="username" autofocus placeholder="enter your name"/> <br /> <br />
+     <input type="password"  name="password" id="password" placeholder="enter your password"/> <br /> <br />
+     <input type="email"  name="email" id="email" placeholder="enter your email"/> <br /> <br />
+     <input type="number" name="number" id="number" placeholder="enter your phn number"/> <br /> <br />
+     <textarea id="textarea" rows="5" cols="50"> </textarea> <br /> <br />
+  <input type="submit" value="register"/> 
+  <input onclick="gilll()" type="button" value="OK"/>
+  <p id="getdetails"> ok </p>
+  </form>
+  <script>
+    function gilll(){
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        var email=document.getElementById("email").value; 
+        var textarea=document.getElementById("textarea").value;
+        var number=document.getElementById("number").value;
+        document.getElementById("getdetails").innerHTML= username+"<br> "+password+"<br> "+email+"<br>"+number+"<br>"+textarea;
+
+    }
+    
+</script>
+
+</body>
+</html>
+
+ 

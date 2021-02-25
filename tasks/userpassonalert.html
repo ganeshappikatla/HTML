@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <label> username:<input type="text" name="username" id="username"/>
+                <label> password:<input type="text" name="password" id="password"/>
+                <button onclick="user()"> submit</button>
+
+        </form>
+        
+        <script>
+            function user() {        
+                event.preventDefault() 
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+          //  var user={
+             //   user:"ganesh",
+              //  password:"ganeshnaidu",
+           // }
+                        alert("username" + user + " "+" password"+ pass)
+
+            console.log(user)
+        }
+        </script>
+    </body>
+</html>

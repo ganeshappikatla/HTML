@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+        <label> username:<input type="text" name="username" id="username"/>
+            <label> password:<input type="password" name="password" id="password"/>
+                <button onclick="cheak()"></button>
+            </form>
+           <script>
+               function cheak(){
+                   event.preventDefault();
+
+               var username=document.getElementById("username").value;
+
+               var password=document.getElementById("password").value;
+
+                //var usercheak=username=="sai"? true: false;
+
+                //var passcheak=password=="gaga"? true: false;
+
+               // usercheak==passcheak?alert("login success"): alert("login failure")
+              // username=="sai" && password=="gaga"? alert("login success"): alert("login fail")
+
+               (username=="sai"|| username=="9866936598") && password=="gaga"? alert("login success"): alert("login fail")
+
+               }
+           </script>
+    </body>
+</html>
